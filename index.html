@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ladla Mustard Oil | Pure Cooking Oil</title>
+<meta name="description" content="100% Pure Kachi Ghani Mustard Oil. Double filtered for perfect purity and rich aroma. Ghora Farm Road (E.B.S.), Hisar.">
+<meta name="theme-color" content="#2e7de0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>tailwind = { config: { corePlugins: { preflight: false } } };</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root{
+    --leaf:#2e7de0;
+    --leaf-deep:#1d5fb8;
+    --mint:#e6f0fd;
+    --sky:#e3f6fb;
+    --teal:#19a7ce;
+    --ink:#1f2f45;
+    --muted:#5a6b82;
+    --line:#d6e4f7;
+  }
+  *{ -webkit-tap-highlight-color: transparent; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Poppins',system-ui,sans-serif;
+    color:var(--ink);
+    min-height:100vh;
+    background:
+      radial-gradient(900px 500px at 10% -10%, #d6e6fc 0%, transparent 60%),
+      radial-gradient(800px 500px at 110% 10%, #d6ecf7 0%, transparent 60%),
+      linear-gradient(180deg,#f4f8ff 0%,#ffffff 100%);
+    background-attachment: fixed;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .wrap{ max-width:480px; margin:0 auto; padding:16px 16px 40px; }
+
+  .panel{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:24px;
+    box-shadow:0 12px 30px -14px rgba(29,95,184,.28);
+  }
+
+  .hero{ position:relative; overflow:hidden; text-align:center; padding:0 20px 24px; }
+  .hero-top{
+    position:relative; height:120px; margin:0 -20px;
+    background:linear-gradient(120deg,var(--leaf) 0%,#5a9cf0 55%,var(--teal) 100%);
+    overflow:hidden;
+  }
+  .hero-top::before,.hero-top::after{ content:""; position:absolute; border-radius:50%; background:rgba(255,255,255,.14); }
+  .hero-top::before{ width:180px; height:180px; right:-50px; top:-70px; animation:drift 9s ease-in-out infinite; }
+  .hero-top::after{ width:120px; height:120px; left:-30px; bottom:-60px; animation:drift 11s ease-in-out infinite reverse; }
+  @keyframes drift{ 0%,100%{ transform:translate(0,0);} 50%{ transform:translate(14px,10px);} }
+
+  .logo{
+    width:104px; height:104px; margin:-54px auto 0; position:relative; z-index:2;
+    border-radius:20%; background:#fff; border:4px solid #fff;
+    box-shadow:0 10px 24px -8px rgba(29,95,184,.45);
+    display:flex; align-items:center; justify-content:center;
+    animation:pop .8s cubic-bezier(.2,1.3,.4,1) both;
+  }
+  .logo-inner{
+    width:100%; height:100%; border-radius:20%;
+    background:linear-gradient(160deg,var(--mint),#fff);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1;
+  }
+  .logo-inner i{ color:var(--leaf); font-size:30px; animation:bob 2.8s ease-in-out infinite; }
+  .logo-inner span{ font-weight:700; color:var(--leaf-deep); font-size:15px; margin-top:6px; letter-spacing:.3px; }
+  @keyframes bob{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-5px);} }
+  @keyframes pop{ from{ transform:scale(.4); opacity:0;} to{ transform:scale(1); opacity:1;} }
+
+  h1{ font-size:1.6rem; font-weight:700; margin:14px 0 2px; color:var(--leaf-deep); }
+  .sub{ color:var(--muted); font-size:.92rem; margin:0; }
+  .company{ font-size:.82rem; color:var(--muted); margin-top:4px; }
+
+  .badge-pure{
+    display:inline-flex; align-items:center; gap:8px; margin-top:14px;
+    padding:9px 16px; border-radius:999px; font-weight:600; font-size:.85rem; color:#fff;
+    background:linear-gradient(100deg,var(--leaf),var(--teal),var(--leaf));
+    background-size:200% 100%; animation:shine 4s linear infinite;
+  }
+  @keyframes shine{ to{ background-position:-200% 0; } }
+
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:14px; }
+  .chip{
+    display:inline-flex; align-items:center; gap:6px; font-size:.78rem; font-weight:500;
+    padding:6px 12px; border-radius:999px; background:var(--mint); color:var(--leaf-deep);
+  }
+  .chip.alt{ background:var(--sky); color:#0f7f9c; }
+
+  .quick{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:18px; }
+  .q-btn{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px;
+    padding:14px 6px; border-radius:16px; border:1px solid var(--line); background:#fff;
+    color:var(--leaf-deep); font-size:.8rem; font-weight:600; text-decoration:none; cursor:pointer;
+    transition:transform .2s, background .2s, box-shadow .2s;
+  }
+  .q-btn i{ font-size:1.25rem; }
+  .q-btn:hover,.q-btn:focus-visible{ background:var(--mint); transform:translateY(-3px); box-shadow:0 8px 16px -10px rgba(29,95,184,.5); color:var(--leaf-deep); }
+  .q-btn.primary{ background:var(--leaf); color:#fff; border-color:var(--leaf); }
+  .q-btn.primary:hover{ background:var(--leaf-deep); color:#fff; }
+  .q-btn.primary i{ animation:ring 2.6s ease-in-out infinite; }
+  @keyframes ring{ 0%,70%,100%{ transform:rotate(0);} 75%{ transform:rotate(-16deg);} 82%{ transform:rotate(14deg);} 89%{ transform:rotate(-10deg);} 95%{ transform:rotate(6deg);} }
+
+  .section-title{ font-size:.95rem; font-weight:600; margin:22px 4px 10px; color:var(--muted); }
+  .link-item{
+    display:flex; align-items:center; gap:14px; padding:12px 14px; margin-bottom:10px;
+    text-decoration:none; color:var(--ink);
+    transition:transform .2s, border-color .2s;
+  }
+  .link-item:hover,.link-item:focus-visible{ transform:translateX(4px); border-color:#aac8f0; color:var(--ink); }
+  .ico{
+    width:46px; height:46px; flex:0 0 46px; border-radius:14px;
+    display:flex; align-items:center; justify-content:center; font-size:1.25rem; color:#fff;
+  }
+  .ico.fb{ background:#1877f2; }
+  .ico.ig{ background:linear-gradient(135deg,#e1558a,#c13fb0,#7c5ce0); }
+  .ico.web{ background:var(--leaf); }
+  .ico.dist{ background:var(--teal); }
+  .ico.ph{ background:#5a9cf0; }
+  .ico.map{ background:#e2574c; }
+  .link-text{ flex:1; min-width:0; }
+  .link-text strong{ display:block; font-size:.95rem; font-weight:600; }
+  .link-text small{ display:block; color:var(--muted); font-size:.78rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .arrow{ color:#9bb2d0; font-size:.9rem; }
+
+  .details{ padding:6px 18px; }
+  .row-d{ display:flex; gap:14px; padding:14px 0; border-bottom:1px dashed var(--line); align-items:flex-start; }
+  .row-d:last-child{ border-bottom:0; }
+  .row-d .ico{ width:40px; height:40px; flex-basis:40px; border-radius:12px; font-size:1.05rem; }
+  .row-d p{ margin:0; font-size:.9rem; line-height:1.5; }
+  .row-d .lbl{ font-size:.75rem; color:var(--muted); font-weight:500; }
+  .row-d a{ color:var(--leaf-deep); font-weight:600; text-decoration:none; }
+  .row-d a:hover{ text-decoration:underline; }
+
+  .map-box{ overflow:hidden; border-radius:24px; }
+  .map-box iframe{ width:100%; height:300px; border:0; display:block; }
+
+  .share-btn{
+    width:100%; padding:14px; border-radius:16px; border:0; font-weight:600; font-size:.95rem; cursor:pointer;
+    color:#fff; background:linear-gradient(100deg,var(--leaf),var(--teal)); transition:transform .2s, filter .2s;
+  }
+  .share-btn:hover{ transform:translateY(-2px); filter:brightness(1.05); }
+  .foot{ text-align:center; font-size:.78rem; color:var(--muted); margin-top:20px; }
+
+  .toast-s{
+    position:fixed; left:50%; bottom:calc(24px + env(safe-area-inset-bottom)); transform:translate(-50%,30px);
+    background:var(--leaf-deep); color:#fff; padding:10px 18px; border-radius:999px; font-size:.85rem;
+    opacity:0; pointer-events:none; transition:.3s; z-index:50;
+  }
+  .toast-s.show{ opacity:1; transform:translate(-50%,0); }
+
+  .reveal{ opacity:0; transform:translateY(18px); animation:rise .7s ease forwards; }
+  @keyframes rise{ to{ opacity:1; transform:none; } }
+
+  a:focus-visible,button:focus-visible{ outline:3px solid #8bb6f0; outline-offset:2px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{ animation:none !important; transition:none !important; }
+    .reveal{ opacity:1; transform:none; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <section class="panel hero reveal" style="animation-delay:.05s">
+    <div class="hero-top"></div>
+    <div class="logo">
+      <div class="logo-inner"><span>Ladla Mustard Oil</span></div>
+    </div>
+
+  
+    <p class="company">Siswalia Enterprises</p>
+
+    <div class="badge-pure"><i class="fa-solid fa-seedling"></i> 100% Pure Kachi Ghani Mustard Oil</div>
+
+    <div class="chips">
+      <span class="chip"><i class="fa-solid fa-filter"></i> Double filtered</span>
+      <span class="chip alt"><i class="fa-solid fa-wind"></i> Rich aroma</span>
+      <span class="chip"><i class="fa-solid fa-circle-check"></i> Perfect purity</span>
+    </div>
+
+    <p class="text-[.9rem] mt-4 mb-0" style="color:var(--muted)">Double filtered for perfect purity and rich aroma.</p>
+
+    <div class="quick">
+      <a class="q-btn primary" href="tel:+919671122667"><i class="fa-solid fa-phone"></i>Call</a>
+      <a class="q-btn" href="https://www.google.com/maps/search/?api=1&query=Ladla+Mustard+Oil+Siswalia+Enterprises+Hisar" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i>Directions</a>
+      <button class="q-btn" id="saveBtn" type="button"><i class="fa-solid fa-user-plus"></i>Save contact</button>
+    </div>
+  </section>
+
+  <div class="section-title reveal" style="animation-delay:.2s">Connect with us</div>
+
+  <a class="panel link-item reveal" style="animation-delay:.25s" href="https://ladlaoilmill.in/become-distributor/" target="_blank" rel="noopener">
+    <span class="ico dist"><i class="fa-solid fa-handshake"></i></span>
+    <span class="link-text"><strong>Become a distributor</strong><small>Partner with Ladla Mustard Oil</small></span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </a>
+
+  <a class="panel link-item reveal" style="animation-delay:.3s" href="https://www.ladlaoilmill.in/" target="_blank" rel="noopener">
+    <span class="ico web"><i class="fa-solid fa-globe"></i></span>
+    <span class="link-text"><strong>Visit our website</strong><small>ladlaoilmill.in</small></span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </a>
+
+  <a class="panel link-item reveal" style="animation-delay:.35s" href="https://www.instagram.com/ladlamustardoil/" target="_blank" rel="noopener">
+    <span class="ico ig"><i class="fa-brands fa-instagram"></i></span>
+    <span class="link-text"><strong>Instagram</strong><small>@ladlamustardoil</small></span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </a>
+
+  <a class="panel link-item reveal" style="animation-delay:.4s" href="https://www.facebook.com/p/Ladla-Mustard-Oil-100091502030269/" target="_blank" rel="noopener">
+    <span class="ico fb"><i class="fa-brands fa-facebook-f"></i></span>
+    <span class="link-text"><strong>Facebook</strong><small>Ladla Mustard Oil</small></span>
+    <i class="fa-solid fa-chevron-right arrow"></i>
+  </a>
+
+  <div class="section-title reveal" style="animation-delay:.45s">Contact details</div>
+  <section class="panel details reveal" style="animation-delay:.5s">
+    <div class="row-d">
+      <span class="ico ph"><i class="fa-solid fa-phone-volume"></i></span>
+      <div>
+        <p class="lbl">Phone</p>
+        <p><a href="tel:+919671122667">+91 96711-22667</a></p>
+        <p><a href="tel:+919671872000">096718 72000</a></p>
+      </div>
+    </div>
+    <div class="row-d">
+      <span class="ico map"><i class="fa-solid fa-location-dot"></i></span>
+      <div>
+        <p class="lbl">Address</p>
+        <p>Ladla Oil Mill, Ghora Farm Road (E.B.S. Road), Sarson ka Tel, Hisar, Haryana 125001</p>
+      </div>
+    </div>
+    <div class="row-d">
+      <span class="ico web"><i class="fa-solid fa-building"></i></span>
+      <div>
+        <p class="lbl">Business</p>
+        <p>Ladla Mustard Oil (Siswalia Enterprises)</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-title reveal" style="animation-delay:.55s">Find us</div>
+  <section class="panel map-box reveal" style="animation-delay:.6s">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.1957658693777!2d75.70452087502777!3d29.158902859984224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3913cd28d7d3b323%3A0x6e5b4ae1d1601c97!2sLADLA%20MUSTARD%20OIL%20(%20Siswalia%20Enterprises)!5e0!3m2!1sen!2sin!4v1793325759467!5m2!1sen!2sin" title="Ladla Mustard Oil location on Google Maps" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </section>
+
+  <div class="mt-4 reveal" style="animation-delay:.65s">
+    <button class="share-btn" id="shareBtn" type="button"><i class="fa-solid fa-share-nodes"></i>&nbsp; Share this card</button>
+  </div>
+
+  <p class="foot">&copy; <span id="yr"></span> Ladla Mustard Oil (Siswalia Enterprises), Hisar</p>
+</main>
+
+<div class="toast-s" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  function toast(msg){
+    var t = document.getElementById('toast');
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toast._h); toast._h = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+  }
+
+  document.getElementById('saveBtn').addEventListener('click', function(){
+    var vcf = [
+      'BEGIN:VCARD','VERSION:3.0',
+      'FN:Ladla Mustard Oil',
+      'ORG:Siswalia Enterprises',
+      'TITLE:Pure Kachi Ghani Mustard Oil',
+      'TEL;TYPE=WORK,VOICE:+919671122667',
+      'TEL;TYPE=WORK,VOICE:+919671872000',
+      'ADR;TYPE=WORK:;;Ladla Oil Mill\\, Ghora Farm Road (E.B.S. Road);Hisar;Haryana;125001;India',
+      'URL:https://www.ladlaoilmill.in/',
+      'END:VCARD'
+    ].join('\r\n');
+    var blob = new Blob([vcf], { type: 'text/vcard' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'Ladla-Mustard-Oil.vcf';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1000);
+    toast('Contact file downloaded');
+  });
+
+  document.getElementById('shareBtn').addEventListener('click', function(){
+    var data = { title: 'Ladla Mustard Oil', text: '100% Pure Kachi Ghani Mustard Oil, Hisar', url: location.href };
+    if (navigator.share) {
+      navigator.share(data).catch(function(){});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(location.href).then(function(){ toast('Link copied'); });
+    } else {
+      toast('Copy the link from your browser');
+    }
+  });
+</script>
+</body>
+</html>
